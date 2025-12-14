@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Orbitron:wght@700&family=Poppins:wght@300&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=roboto:wght@700&family=Poppins:wght@300&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Available Fonts:exo 2, orbitron, poppins, space mono */
+/* Available Fonts:exo 2, roboto, poppins, space mono */
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +14,7 @@ html {
 }
 
 .navbar {
-    background-color: #222;
+    background-color: #02185f;
     display: flex;
     align-items: center;
     height: 80px;
@@ -67,20 +68,20 @@ html {
     font-weight: 500;
     font-size: 16px;
     outline: none;
-    color: #66fcf1;
+    color: #fff;
     cursor: pointer;
     transition: 0.2s;
-    font-family: "orbitron";
+    font-family: "roboto";
 }
 
 .navBtn a {
-    color: #66fcf1;
+    color: #fff;
     text-decoration: none;
 }
 
 .navBtn a:hover {
-    color: #0b0c10;
-    background-color: #66fcf1;
+    color: #02185f;
+    background-color: #fff;
 }
 
 @media (max-width:725px) {
@@ -90,7 +91,7 @@ html {
 }
 
 .sidebar {
-    background-color: #0b0c10;
+    background-color: #02185f;
     height: 100%;
     width: 250px;
     position: fixed;
@@ -101,20 +102,20 @@ html {
 
 .sidebar h1 {
     font-family: "space mono";
-    color: #66fcf1;
+    color: #fff;
     font-size: 36px;
 }
 
 .sidebar a {
-    color: #66fcf1;
+    color: #fff;
     text-decoration: none;
     font-family: poppins;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    background-color: #66fcf1;
-    color: #0b0c10;
+    background-color: #fff;
+    color: #02185f;
 }
 
 .displayBlock {
@@ -150,7 +151,7 @@ html {
     padding: 30px;
     width: 28%;
     color: #222;
-    border: 1px solid #0b0c10;
+    border: 1px solid #02185f;
 }
 
 .blog h2 {
@@ -187,7 +188,7 @@ h6 {
     justify-content: center;
     align-items: center;
     margin-top: 72px;
-    border: 2px solid #66fcf1;
+    border: 2px solid #fff;
     height: 200px;
 }
 
@@ -208,11 +209,11 @@ h6 {
     font-size: 17px;
     font-family: poppins;
     font-weight: 700;
-    border: 2px solid #66fcf1;
+    border: 2px solid #fff;
     border-left: none;
     cursor: pointer;
     outline: none;
-    color: #66fcf1;
+    color: #fff;
     background-color: transparent;
 }
 
@@ -243,8 +244,8 @@ h6 {
 
 .projectDiv {
     background-color: #222;
-    border: 1px solid #0b0c10;
-    color: #0b0c10;
+    border: 1px solid #02185f;
+    color: #02185f;
     padding: 10px;
     margin: 10px;
     padding: 20px;
@@ -267,7 +268,7 @@ h6 {
 .projectBtn {
     background-color: #ddd;
     border-radius: 9px;
-    color: #0b0c10;
+    color: #02185f;
     position: relative;
     bottom: 0;
     padding: 9px;
@@ -302,6 +303,23 @@ h6 {
     background-color: black;
 }
 
+.searchInput {
+    padding: 8px 12px;
+    margin-right: 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #121212;
+    font-size: 1rem;
+    color: #eee;
+    outline: none;
+    font-family: poppins;
+    width: 100%;
+}
+
+.searchInput::placeholder {
+    color: #999;
+}
+
 .navMainTitle {
     color: #ddd;
     font-size: 25px;
@@ -310,7 +328,7 @@ h6 {
 }
 
 .loginBody {
-    background-color: #0b0c10;
+    background-color: #fff;
     font-family: poppins;
     display: flex;
     align-items: center;
@@ -319,44 +337,7 @@ h6 {
     overflow-x: hidden;
 }
 
-.loginForm {
-    background-color: #fff;
-    height: 50px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-}
 
-.loginForm input {
-    outline: none;
-    border: none;
-    height: 50px;
-    border-radius: 0;
-    padding: 0 20px;
-    font-family: poppins;
-    font-size: 18px;
-}
-
-.loginForm button {
-    outline: none;
-    border: none;
-    outline: none;
-    height: 52px;
-    padding: 10px;
-    font-size: 20px;
-    font-family: poppins;
-    width: 100px;
-    font-weight: 500;
-    background-color: transparent;
-    border-left: 1px solid #0b0c10;
-    cursor: pointer;
-}
-
-.loginForm button:hover {
-    font-weight: 900;
-}
 
 @media (max-width:900px) {
 
@@ -391,7 +372,7 @@ h6 {
 
 .annualComment {
     margin-top: 100px;
-    background-color: #0b0c10;
+    background-color: #02185f;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -410,8 +391,8 @@ h6 {
 #annualBtn {
     border: none;
     outline: none;
-    background-color: #0b0c10;
-    border: 2px solid #66fcf1;
+    background-color: #02185f;
+    border: 2px solid #fff;
     border-left: none;
     cursor: pointer;
 }
@@ -423,35 +404,59 @@ h6 {
 
 .login-logo {
     margin-top: 30px;
-    width: 210px;
+    width: 150px;
+}
+
+.login-logo-text{
+    width: 300px;
+}
+
+.logo-images {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
 }
 
 .login-title {
     margin-bottom: 25px;
-    font-size: 50px;
-    color: #ddd;
-    font-family: orbitron;
-    letter-spacing: 5px;
-    font-weight: 100;
+    font-size: 30px;
+    color: #031273;
+    font-family: "Roboto";
+    letter-spacing: -1px;
+    font-weight: 500;
 }
 
-@media (max-width:345px) {
-    .loginForm {
-        width: 100%;
-        border-radius: 0px;
-    }
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .loginForm button {
-        font-size: 20px;
-    }
+.loginForm input {
+    padding: 10px;
+    border-radius: 9px;
+    border: 1px solid rgb(124, 124, 124);
+    font-size: 1rem;
+    font-family: "poppins";
+    width: 300px;
+}
+
+.loginForm button {
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-color: #02185f;
+    color: white;
 }
 
 .options {
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #66fcf1;
+    color: #fff;
 }
 
 @media (max-width: 907px) {
@@ -461,7 +466,7 @@ h6 {
 }
 
 .optionDiv {
-    background-color: #0b0c10;
+    background-color: #02185f;
     height: 300px;
     width: 400px;
     margin: 10px;
@@ -485,7 +490,7 @@ h6 {
 .optionDiv h2 {
     font-size: 35px;
     margin-bottom: 20px;
-    font-family: orbitron;
+    font-family: roboto;
     text-align: center;
 }
 
@@ -494,33 +499,32 @@ h6 {
     background-color: transparent;
     font-size: 18px;
     border-radius: 0px;
-    border: 2px solid #66fcf1;
-    color: #66fcf1;
+    border: 2px solid #fff;
+    color: #fff;
     outline: none;
     padding: 10px;
 }
 
 .btn:hover {
-    background-color: #66fcf1;
-    color: #0b0c10;
+    background-color: #fff;
+    color: #02185f;
     transition: 0.4s;
 }
 
 .annualBody {
-    background-color: #0b0c10;
+    background-color: #02185f;
 }
 
 .annual-main {
-    margin-top: 100px;
     display: flex;
-    color: #66fcf1;
+    color: #fff;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
 .annual-main h1 {
-    font: 500 50px orbitron;
+    font: 500 50px roboto;
     margin: 20px;
 }
 
@@ -559,12 +563,11 @@ h6 {
 }
 
 .main {
-    margin-top: 70px;
     font-family: poppins;
 }
 
 .btnBgDark {
-    background-color: #0b0c10;
+    background-color: #02185f;
 }
 
 .backBtn {
@@ -581,8 +584,8 @@ h6 {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #0b0c10;
-    color: #66fcf1;
+    background-color: #02185f;
+    color: #fff;
 }
 
 h1,
@@ -617,17 +620,17 @@ form.login-form input {
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    background-color: #0b0c10;
-    color: #66fcf1;
-    border: 1px solid #66fcf1;
+    background-color: #02185f;
+    color: #fff;
+    border: 1px solid #fff;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
 form.login-form input[type="submit"] {
     cursor: pointer;
-    background-color: #66fcf1;
-    color: #0b0c10;
+    background-color: #fff;
+    color: #02185f;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
@@ -646,7 +649,7 @@ form.login-form input[type="submit"]:hover {
 }
 
 .areYouAdminLink {
-    color: #66fcf1;
+    color: #fff;
     margin: 10px;
 }
 
@@ -671,5 +674,5 @@ form.login-form input[type="submit"]:hover {
 .table-header-cell {
     background-color: #f2f2f2;
     font-weight: bold;
-    font-family: orbitron;
+    font-family: roboto;
 }
