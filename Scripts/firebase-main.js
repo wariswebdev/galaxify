@@ -29,6 +29,10 @@ const handleVoteFirebase = async (event) => {
     const originalButtonText = voteButton.innerHTML;
     const projectNameToBeVoted = voteButton.parentNode.children[0].innerHTML;
 
+    // Show loading gif
+    voteButton.innerHTML = `<img src="../Images/loading.gif" alt="Loading..." style="height:24px;vertical-align:middle;">`;
+    voteButton.disabled = true;
+
     try {
         const userVotes = await getUserVotes();
 
@@ -45,6 +49,7 @@ const handleVoteFirebase = async (event) => {
                 updateLocalStorageAndButton(projectNameToBeVoted, false);
             } else {
                 voteButton.innerHTML = originalButtonText;
+                voteButton.disabled = false;
             }
         } else {
             const projectRef = ref(appDatabase, `votedProjects/${projectNameToBeVoted}`);
@@ -62,11 +67,13 @@ const handleVoteFirebase = async (event) => {
                 console.log("User has reached the maximum number of votes (3).");
                 alert("You cannot vote more than 3 projects.");
                 voteButton.innerHTML = originalButtonText;
+                voteButton.disabled = false;
             }
         }
     } catch (error) {
         console.error("Error handling vote/unvote:", error);
         voteButton.innerHTML = originalButtonText;
+        voteButton.disabled = false;
     }
 };
 

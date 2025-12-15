@@ -21,7 +21,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #fff;
     z-index: 999;
 }
 
@@ -266,7 +266,7 @@ h6 {
 }
 
 .projectBtn {
-    background-color: #ddd;
+    background-color: #fff;
     border-radius: 9px;
     color: #02185f;
     position: relative;
@@ -288,7 +288,7 @@ h6 {
 }
 
 .tab {
-    color: #ddd;
+    color: #fff;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     background-color: transparent;
@@ -321,7 +321,7 @@ h6 {
 }
 
 .navMainTitle {
-    color: #ddd;
+    color: #fff;
     font-size: 25px;
     font-family: poppins;
     margin-right: 30px;
@@ -664,7 +664,7 @@ form.login-form input[type="submit"]:hover {
 .table-data-cell {
     padding: 10px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
 }
 
 .table-data-cell {
