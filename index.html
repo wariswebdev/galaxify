@@ -16,6 +16,15 @@
     <div class="loginForm">
         <input type="text" id="formInput" placeholder="Enter Your GR number">
         <button class="loginBtn" id="loginBtn">NEXT</button>
+        <script>
+        // Allow Enter key to submit the form
+        document.getElementById('formInput').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.getElementById('loginBtn').click();
+            }
+        });
+        </script>
     </div>
     <script type="module" src="./Scripts/index.js"></script>
 </body>
